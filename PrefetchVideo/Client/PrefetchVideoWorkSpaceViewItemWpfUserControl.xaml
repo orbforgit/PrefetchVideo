@@ -1,0 +1,41 @@
+<platformclient:ViewItemWpfUserControl x:Class="PrefetchVideo.Client.PrefetchVideoWorkSpaceViewItemWpfUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                                         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             xmlns:local="clr-namespace:PrefetchVideo.Client"
+           
+           
+             xmlns:platformclient="clr-namespace:VideoOS.Platform.Client;assembly=VideoOS.Platform"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" ClickEvent="ViewItemWpfUserControl_ClickEvent" DoubleClickEvent="ViewItemWpfUserControl_DoubleClickEvent">
+    <Grid Margin="0,0,-728,-378"  >
+        <Button x:Name="btn_KameraSec" Content="Kamera Sec" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="10,10,0,0" Height="28" Click="btn_KameraSec_Click" FontWeight="Bold"/>
+        <Label Content="Secili Kameralar :"  HorizontalAlignment="Left" Margin="170,12,0,0" VerticalAlignment="Top" Width="139" Background="{x:Null}" Foreground="White" FontWeight="Bold"/>
+
+
+        <Label Content="Baslangic Tarihi :" HorizontalAlignment="Left" Margin="12,190,0,0" VerticalAlignment="Top" Width="106" Foreground="White" Background="{x:Null}" FontWeight="Bold"  />
+        <Label Content="Zaman :" HorizontalAlignment="Left" Margin="34,242,0,0" VerticalAlignment="Top" Width="74" Foreground="White" FontWeight="Bold" Background="{x:Null}"/>
+        <Button x:Name="btn_Getir" Content="Getir" HorizontalAlignment="Left" Margin="575,233,0,0" VerticalAlignment="Top" Width="89" Height="35" Click="btn_Getir_Click" FontWeight="Bold"/>
+        <RichTextBox x:Name="rctxbx_Surec" HorizontalAlignment="Left" Foreground="Black" Height="489" Margin="736,10,0,0" VerticalAlignment="Top" Width="282" Background="{x:Null}" CaretBrush="#FF9B9B9B">
+            <FlowDocument Background="White">
+                <Paragraph>
+                    <Run Text=" "/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Islemler :" HorizontalAlignment="Left" Margin="670,12,0,0" VerticalAlignment="Top" Width="61" Background="{x:Null}" Foreground="White" RenderTransformOrigin="0.683,-0.527"/>
+
+        <DatePicker x:Name="dpcr_BasTarih" HorizontalAlignment="Left" Margin="132,190,0,0" VerticalAlignment="Top" Width="252" SelectedDateFormat="Long" Background="Black" FontWeight="SemiBold" Foreground="White"/>
+        <ComboBox x:Name="cmb_BasSaat" HorizontalAlignment="Left" Margin="451,190,0,0" VerticalAlignment="Top" Width="54"/>
+        <Label Content="Saat :" HorizontalAlignment="Left" Margin="399,195,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White"/>
+        <ComboBox x:Name="cmb_BasDakika" HorizontalAlignment="Left" Margin="527,190,0,0" VerticalAlignment="Top" Width="54"/>
+        <ComboBox x:Name="cmb_Zaman" HorizontalAlignment="Left" Margin="113,241,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="lstBox_Cameras" HorizontalAlignment="Left" MouseDoubleClick="lstBox_Cameras_MouseDoubleClick" Height="129" Margin="170,38,0,0" VerticalAlignment="Top" Width="494"/>
+
+
+
+
+    </Grid>
+</platformclient:ViewItemWpfUserControl>

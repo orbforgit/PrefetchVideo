@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80088F69-EB27-47F2-97D4-607F2EB1C999}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrefetchVideo</RootNamespace>
+    <AssemblyName>PrefetchVideo</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <PackageReference Include="MilestoneSystems.VideoOS.Platform" Version="*" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\PrefetchVideoAddUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoAddUserControl.Designer.cs">
+      <DependentUpon>PrefetchVideoAddUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoHelpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoHelpPage.Designer.cs">
+      <DependentUpon>PrefetchVideoHelpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoItemManager.cs" />
+    <Compile Include="Admin\PrefetchVideoTabPlugin.cs" />
+    <Compile Include="Admin\PrefetchVideoTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoTabUserControl.Designer.cs">
+      <DependentUpon>PrefetchVideoTabUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoToolsOptionDialogPlugin.cs" />
+    <Compile Include="Admin\PrefetchVideoToolsOptionDialogUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoToolsOptionDialogUserControl.designer.cs">
+      <DependentUpon>PrefetchVideoToolsOptionDialogUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\PrefetchVideoUserControl.Designer.cs">
+      <DependentUpon>PrefetchVideoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Background\PrefetchVideoBackgroundPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoPropertiesWpfUserControl.xaml.cs">
+      <DependentUpon>PrefetchVideoPropertiesWpfUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PrefetchVideoSettingsPanelPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoSettingsPanelControl.xaml.cs">
+      <DependentUpon>PrefetchVideoSettingsPanelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PrefetchVideoSidePanelPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoSidePanelWpfUserControl.xaml.cs">
+      <DependentUpon>PrefetchVideoSidePanelWpfUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PrefetchVideoViewItemPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoViewItemManager.cs" />
+    <Compile Include="Client\PrefetchVideoViewItemToolbarPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoViewItemWpfUserControl.xaml.cs">
+      <DependentUpon>PrefetchVideoViewItemWpfUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PrefetchVideoViewLayout.cs" />
+    <Compile Include="Client\PrefetchVideoWorkSpacePlugin.cs" />
+    <Compile Include="Client\PrefetchVideoWorkSpaceToolbarPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoWorkSpaceViewItemManager.cs" />
+    <Compile Include="Client\PrefetchVideoWorkSpaceViewItemPlugin.cs" />
+    <Compile Include="Client\PrefetchVideoWorkSpaceViewItemWpfUserControl.xaml.cs">
+      <DependentUpon>PrefetchVideoWorkSpaceViewItemWpfUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PrefetchVideoDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\PrefetchVideoAddUserControl.resx">
+      <DependentUpon>PrefetchVideoAddUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\PrefetchVideoTabUserControl.resx">
+      <DependentUpon>PrefetchVideoTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PrefetchVideoToolsOptionDialogUserControl.resx">
+      <DependentUpon>PrefetchVideoToolsOptionDialogUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\PrefetchVideoHelpPage.resx">
+      <DependentUpon>PrefetchVideoHelpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PrefetchVideoUserControl.resx">
+      <DependentUpon>PrefetchVideoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="plugin.def">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\DummyItem.bmp" />
+    <EmbeddedResource Include="Resources\WorkSpaceIcon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Client\PrefetchVideoPropertiesWpfUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Client\PrefetchVideoSettingsPanelControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Client\PrefetchVideoSidePanelWpfUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Client\PrefetchVideoViewItemWpfUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Client\PrefetchVideoWorkSpaceViewItemWpfUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
